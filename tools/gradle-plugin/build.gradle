@@ -3,7 +3,7 @@ plugins {
     id 'java-gradle-plugin'
 }
 
-group "io.smallrye"
+group "io.dpolysiou" // group changed from 'io.smallrye'
 
 if (JavaVersion.current().isJava9Compatible()) {
     compileJava.options.compilerArgs.addAll(['--release', '8'])
@@ -30,8 +30,8 @@ repositories {
 dependencies {
     api gradleApi()
     implementation "io.smallrye:jandex:3.0.0"
-    implementation "io.smallrye:smallrye-graphql:${version}"
-    implementation "io.smallrye:smallrye-graphql-schema-builder:${version}"
+    implementation "io.dpolysiou:smallrye-graphql:${version}" // group changed from 'io.smallrye'
+    implementation "io.dpolysiou:smallrye-graphql-schema-builder:${version}"
     implementation "jakarta.json.bind:jakarta.json.bind-api:2.0.0"
     implementation "jakarta.validation:jakarta.validation-api:3.0.2"
     implementation "org.eclipse:yasson:2.0.4"
@@ -56,7 +56,7 @@ javadoc {
 }
 
 pluginBundle {
-    group = 'io.smallrye.graphql'
+    group = 'io.dpolysiou.graphql' // group changed from 'io.smallrye.graphql'
     website = 'http://github.com/smallrye/smallrye-graphql/'
     vcsUrl = 'https://github.com/smallrye/smallrye-graphql'
     tags = ['smallrye', 'graphql', 'microprofile']

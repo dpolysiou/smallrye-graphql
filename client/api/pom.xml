@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     
     <parent>
-        <groupId>io.smallrye</groupId>
+        <groupId>io.dpolysiou</groupId> <!-- group changed from io.smallrye -->
         <artifactId>smallrye-graphql-client-parent</artifactId>
         <version>2.13.1-SNAPSHOT</version>
     </parent>

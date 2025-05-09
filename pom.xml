@@ -9,6 +9,7 @@
     </parent>
 
     <artifactId>smallrye-graphql-parent</artifactId>
+    <groupId>io.dpolysiou</groupId> <!-- group changed from io.smallrye -->
     <version>2.13.1-SNAPSHOT</version>
 
     <packaging>pom</packaging>
@@ -92,7 +93,7 @@
         <module>common</module>
         <module>server</module>
         <module>client</module>
-        <module>tools</module>
+<!--        <module>tools</module>-->
     </modules>
     
     <dependencyManagement>
@@ -507,15 +508,17 @@
 
                             <modules>
                                 <includes>
-                                    <include>io.smallrye:*</include>
+                                    <!-- group changed from io.smallrye -->
+                                    <include>io.dpolysiou:*</include>
                                 </includes>
                                 <excludes>
-                                    <exclude>io.smallrye:smallrye-graphql-integration-tests</exclude>
-                                    <exclude>io.smallrye:smallrye-graphql-client-generator-test</exclude>
-                                    <exclude>io.smallrye:smallrye-graphql-maven-plugin-tests</exclude>
-                                    <exclude>io.smallrye:smallrye-graphql-tck</exclude>
-                                    <exclude>io.smallrye:smallrye-graphql-client-tck</exclude>
-                                    <exclude>io.smallrye:smallrye-graphql-documentation</exclude>
+                                    <exclude>io.dpolysiou:smallrye-graphql-integration-tests</exclude>
+                                    <exclude>io.dpolysiou:smallrye-graphql-client-generator-test</exclude>
+                                    <exclude>io.dpolysiou:smallrye-graphql-maven-plugin-tests</exclude>
+                                    <exclude>io.dpolysiou:smallrye-graphql-tck</exclude>
+                                    <exclude>io.dpolysiou:smallrye-graphql-client-tck</exclude>
+                                    <exclude>io.dpolysiou:smallrye-graphql-documentation</exclude>
+                                    <exclude>io.dpolysiou:smallrye-graphql-maven-plugin</exclude>
                                 </excludes>
                             </modules>
                         </bom>

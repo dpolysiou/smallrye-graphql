@@ -77,7 +77,7 @@ public class SmallRyeGraphQLArchiveProcessor implements ApplicationArchiveProces
 
                 // Add GraphQL
                 String[] deps = {
-                        "io.smallrye:smallrye-graphql-servlet",
+                        "io.dpolysiou:smallrye-graphql-servlet", // group changed from 'io.smallrye'
                         "io.reactivex.rxjava2:rxjava",
                 };
                 File[] dependencies = Maven.configureResolver()
